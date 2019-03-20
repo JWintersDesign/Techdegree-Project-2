@@ -1,72 +1,397 @@
-@import "styles.css";
 
-/* ===========================
-  Base Element Styles
-=============================*/
+/* ================================= 
+  Base Styles
+  ==================================== */
+  * { 
+  	box-sizing: border-box;
+  }
 
-* {
-  box-sizing: border-box;
-}
+  body {
+  	font-family: 'Open Sans', sans-serif;
+  	line-height: 1.6;
+  	background: #F9FAFA;
+  }
 
-body {
-  line-height: 1.6;
-  color: #3a3a3a;
-}
 
-a {
-  color: #fff;
-  text-decoration: none;
-}
 
-/* ===========================
-  Base Layout Styles
-=============================*/
+  .all-content {
+  	text-align: center;
 
-/* ---- Navigation ---- */
+  }
 
-.name {
+  .name {
+  	margin-bottom: 0%;
+  }
+
+  ul,
+  h2,
+  a,
+  .return,
+  .caption  {
+  	font-family: 'Josefin Sans', sans-serif;
+  	text-transform: uppercase;
+  	text-decoration: none;
+  	font-weight: bold;
+  	color: #000000;
+  }
+
+  h2 {
+  	font-size: medium;
+  	padding-top: 2em;
+  	padding-bottom: 1em;
+  }
+
+  .caption {
+    text-transform: capitalize;
+    text-align: center;
+
+  }
+
+
+  .name,
+  .footer-name {
+  	font-family: 'Josefin Sans', sans-serif;
+  	font-weight: bold;
+  	color: #000000;
+
+  }
+
+  .cont-info p {
+    padding-bottom: 10px;
+
+  }
+
+
+
+  .profile {
+  	padding: 10% 15% 5%;
+
+  }
+
+  img {
+  	width: 100%;
+  }
+
+
+  #skills,
+  #contact {
+    margin-top: 0;
+  }
+
+
+
+
+  .skill-set {
+    text-align: center;
+    background: white;
+
+  }
+
+
+  .skill-col img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .main-content {
+  	background: #F8F8F8;
+  	padding-bottom: 5%;
+
+  }
+
+
+
+  .contactinfo {
+  	color: #737373;
+  	font-weight: bold;
+  }
+
+  p {
+
+   font-size: 1em;
+   width: 85%;
+   margin: auto;
+   color: #737373;
+   padding-bottom: 5%;
+
+ }
+
+
+
+ hr {
+   width: 90%;
+   color: #bfbfbf;
+
+ }
+
+ .footer-name {
+   float: left;
+   padding-top: 1.5em;
+   padding-bottom: 1.5em;
+
+ }
+
+ .return {
+
+   float: right;
+   padding-top: 1.5em;
+   padding-bottom: 1.5em;
+
+ }
+
+ .return a:hover {
+   border-bottom: solid 2px #675A85;
+
+ }
+
+ .main-footer {
+   width: 90%;
+   margin: auto;
+ }
+
+ .cont-info {
+   padding-bottom: 5%;
+
+ }
+
+ figure {
   margin: 0;
+  padding-bottom: 1em;
+
 }
 
-/* ---- Layout Containers ---- */
 
-.container {
-  padding-left: 1em;
-  padding-right: 1em;
-}
+  /* ================================= 
+  Base Layout Styles
+  ==================================== */
 
-.main-header {
-  background: #3acec2;
-  padding: 1em 0;
-}
+  /* ---- Navigation ---- */
 
-.main-footer {
-  text-align: center;
-  padding: 2em 0;
-  background: #d9e4ea;
-}
+  nav {
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
 
-/* ===========================
+  .main-nav a {
+    background: #FFFFFF;
+    width: 90%;
+    margin: auto ;
+    margin-bottom: 2%;
+    padding: 10px;
+    display: block;
+  }
+
+  .main-nav a:hover {
+    background: #675A85;
+    color: white;
+  }
+
+
+  .footer-nav {
+   display: none;
+ }
+
+
+
+/* ================================= 
   Media Queries
-=============================*/
+  ==================================== */
 
-@media (min-width: 768px) {
-    .container {
-      width: 70%;
-      max-width: 1024px;
-      margin: 0 auto;
-    }
-    .name {
-      float: left;
-    }
-    .main-nav {
-      float: right;
-    }
-    .main-nav li {
-      display: inline-block;
-      margin-left: 15px;
-    }
-    .tagline {
-      font-size: 1.4em;
-    }
+  @media (min-width: 768px) {
+
+
+
+    .main-nav { 
+     display: inline-block;
+     padding-top: .5em;
+     padding-bottom: 1.5em;
+   }
+
+   .main-nav a {
+     text-align: center;
+     background-color: #F9FAFA;
+     display: inline-block;
+     padding-bottom: 5px;
+     margin-bottom: 0px;
+   }
+
+   .main-nav a:hover {
+     color: black;
+     background-color: #F9FAFA;
+     border-bottom: solid 2px #675A85;
+   }
+
+   .main-nav li {
+     width: 150px;
+     float:left;
+     text-align: center;
+
+   }
+
+
+   .profile-area {
+    width: 95%;
+    margin: auto;
+  }
+
+  .profile {
+   float: right;
+   width: 45%;
+   /*padding:  0% 5% 5%;*/
+   padding: 0;
+   box-shadow: 5px 10px 8px gray;
+
+ }
+
+ .profile-text {
+   float: left;
+   width: 48%;
+   text-align: center;
+   padding: 2% 0% 5% 5%;
+   margin-top: 1em;
+   
+ }
+
+ .main-content {
+   width: 100%;
+
+ }
+
+ .skill-wrap {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  background: white;
+}
+
+
+
+
+.skill-col {
+ float: left;
+ margin: auto;
+ width: 50%;
+ 
+}
+
+.col {
+ float: left;
+ width: 50%;
+ padding: 1%;
+ 
+
+}
+
+.footer-nav { 
+ display: inline-block;
+ float: right;
+ padding-top: 1.5em;
+ padding-bottom: 1.5em;
+}
+
+.footer-nav li {
+ float: left;
+ margin-left: 1em;
+
+}
+
+.footer-nav a:hover {
+ border-bottom: solid 2px #675A85;
+
+}
+
+.return {
+ display: none;
+}
+
+
+}
+
+@media (min-width:1024px) {
+
+  p {
+    font-size: 1.1vw;
+
+  }
+
+  .upper {
+   width: 90%;
+   margin: auto;
+
+ }
+
+ .name {
+   float: left;
+   padding: 8px 0px 24px;
+   margin: 0;
+
+ }
+
+ .profile-text {
+   float: left;
+   width: 45%;
+   text-align: center;
+   padding: 5% 0% 5% 5%;
+   margin-top: 1em;
+
+ }
+
+ .main-nav {
+  float:right;
+
+}
+
+.main-content {
+  width: 95%;
+  margin: auto;
+
+
+}
+
+.skill-wrap {
+
+  width: 95%;
+}
+
+
+.col {
+  float: left;
+  width: 33.3%;
+  padding: 1%;
+
+}
+
+.skill-col {
+	float: left;
+	width: 25%;
+	padding: 1%;
+  margin: auto;
+
+}
+
+.profile {
+
+  padding-right: 0%;
+  margin-top: 10px;
+}
+
+.profile-text {
+	padding-left: 0%;
+
+}
+
+.skill-set {
+  width: 75%;
+  text-align: center;
+  margin: auto;
+}
+
+}
+
+/* Float Clearfix ------------------ */
+
+.group::after {
+ content: "";
+ display: table;
+ clear: both;
 }
