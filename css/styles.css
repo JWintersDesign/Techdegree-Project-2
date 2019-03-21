@@ -101,7 +101,7 @@
 
 
 
-  .contactinfo {
+  .contact-info {
   	color: #737373;
   	font-weight: bold;
   }
@@ -172,7 +172,7 @@
     margin-bottom: 2px;
   }
 
-  .main-nav a {
+  .nav-links a {
     background: #FFFFFF;
     width: 90%;
     margin: auto ;
@@ -229,12 +229,12 @@
    }
 
 
-   .profile-area {
+   .profile-summary {
     width: 95%;
     margin: auto;
   }
 
-  .profile {
+  .profile-picture {
    float: right;
    width: 45%;
    /*padding:  0% 5% 5%;*/
@@ -243,7 +243,7 @@
 
  }
 
- .profile-text {
+ .profile-summary-text {
    float: left;
    width: 48%;
    text-align: center;
@@ -314,13 +314,13 @@
 
   }
 
-  .upper {
+  .top-content {
    width: 90%;
    margin: auto;
 
  }
 
- .name {
+ .student-name {
    float: left;
    padding: 8px 0px 24px;
    margin: 0;
@@ -365,7 +365,7 @@
 	float: left;
 	width: 25%;
 	padding: 1%;
-  margin: auto;
+	margin: auto;
 
 }
 
@@ -390,7 +390,7 @@
 
 /* Float Clearfix ------------------ */
 
-.group::after {
+.navigation::after {
  content: "";
  display: table;
  clear: both;
