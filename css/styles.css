@@ -172,7 +172,7 @@
     margin-bottom: 2px;
   }
 
-  .nav-links a {
+  .main-nav a {
     background: #FFFFFF;
     width: 90%;
     margin: auto ;
@@ -229,7 +229,7 @@
    }
 
 
-   .profile-summary {
+   .profile-area {
     width: 95%;
     margin: auto;
   }
@@ -314,13 +314,13 @@
 
   }
 
-  .top-content {
+  .upper {
    width: 90%;
    margin: auto;
 
  }
 
- .student-name {
+ .name {
    float: left;
    padding: 8px 0px 24px;
    margin: 0;
@@ -390,7 +390,7 @@
 
 /* Float Clearfix ------------------ */
 
-.navigation::after {
+.group::after {
  content: "";
  display: table;
  clear: both;
