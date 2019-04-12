@@ -285,7 +285,7 @@
  float: left;
  width: 50%;
  padding: 1%;
- 
+ min-height: 500px;
 
 }
 
@@ -365,6 +365,7 @@
   float: left;
   width: 33.3%;
   padding: 1%;
+  min-height: 400px;
 
 }
 
