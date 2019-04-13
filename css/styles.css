@@ -253,9 +253,8 @@
  .profile-summary-text {
    float: left;
    width: 48%;
-   text-align: center;
-   padding: 2% 0% 5% 5%;
-   margin-top: 1em;
+   text-align: left;
+   padding: 0% 0% 5% 5%;
    
  }
 
@@ -338,8 +337,7 @@
    float: left;
    width: 45%;
    text-align: center;
-   padding: 5% 0% 5% 5%;
-   margin-top: 1em;
+   padding: 0% 0% 5% 5%;
 
  }
 
